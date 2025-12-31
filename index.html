@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho: Festejando a conexão campo e cidade</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container-cabeçalho-mobile">
+            <input type="checkbox" id="opcoes-menu-mobile" class="opcoes-botao-oculto-mobile">
+            <label for="opcoes-menu-mobile" class="opcoes-rotulo-clicavel-mobile">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+                <ul class="opcoes-menu-lista-mobile">
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#historia-da-agricultura" class="opçoes-menu__link">História da agricultura</a>
+                    </li>
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#Agricultura-de-precisao" class="opçoes-menu__link">Agricultura de precisão</a>
+                    </li>
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#Agricultura-de-precisão-no-Paraná" class="opçoes-menu__link">Agricultura de precisão no Paraná</a>
+                    </li>
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#agricultura-familiar" class="opçoes-menu__link">Agricultura familiar</a>
+                    </li> 
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#biotecnologia" class="opçoes-menu__link">Biotecnologia</a>
+                    </li>
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#sustentabilidade-na-agricultura" class="opçoes-menu__link">Sustentabilidade na agricultura</a>
+                    </li>
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#conexao-campo-e-cidade" class="opçoes-menu__link">Conexão campo e cidade</a>
+                    </li>
+
+                    <li class="opçoes-menu__item-mobile">
+                        <a href="#jogo" class="opçoes-menu__link">Vamos nos divertir?</a>
+                    </li>
+                </ul>
+        
+            <h2 class="titulo-mobile">Agrinho</h2>
+
+            <div class="img-mobile"> 
+                <img src="img/cabeçalho-mobile.svg" alt="imagem do campo mobile" class="imagem-cabeçalho-mobile">
+            </div>
+        </div>
+
+
+        <h1 class="titulo-cabeçalho">Agrinho: festejando a conexão campo e cidade</h1>
+
+        <div class="menu-desk">
+                <input type="checkbox" id="opcoes-menu-checkbox" class="opcoes-botao-oculto">
+                <label for="opcoes-menu-checkbox" class="opcoes-rotulo-clicavel">
+                    <span class="opçoes-titulo">O que deseja descobrir hoje?</span>
+                </label>
+                <ul class="opcoes-menu-lista">
+                    <li class="opçoes-menu__item">
+                        <a href="#historia-da-agricultura" class="opçoes-menu__link">História da agricultura</a>
+                    </li>
+
+                    <li class="opçoes-menu__item">
+                        <a href="#Agricultura-de-precisao" class="opçoes-menu__link">Agricultura de precisão</a>
+                    </li>
+
+                    <li class="opçoes-menu__item">
+                        <a href="#Agricultura-de-precisão-no-Paraná" class="opçoes-menu__link">Agricultura de precisão no Paraná</a>
+                    </li>
+
+                    <li class="opçoes-menu__item">
+                        <a href="#agricultura-familiar" class="opçoes-menu__link">Agricultura familiar</a>
+                    </li> 
+
+                    <li class="opçoes-menu__item">
+                        <a href="#biotecnologia" class="opçoes-menu__link">Biotecnologia</a>
+                    </li>
+
+                    <li class="opçoes-menu__item">
+                        <a href="#sustentabilidade-na-agricultura" class="opçoes-menu__link">Sustentabilidade na agricultura</a>
+                    </li>
+
+                    <li class="opçoes-menu__item">
+                        <a href="#conexao-campo-e-cidade" class="opçoes-menu__link">Conexão campo e cidade</a>
+                    </li>
+
+                    <li class="opçoes-menu__item">
+                        <a href="#jogo" class="opçoes-menu__link">Vamos nos divertir?</a>
+                    </li>
+                </ul>
+        </div>
+    </header>
+    <section class="seçao-abertura">
+        <div class="card-abertura">
+            <img src="img/Bem-vindos!.svg" alt="texto da seção de abertura" class="card-abertura__titulo">
+            <p class="card-abertura__texto">Aqui você poderá encontrar informações sobre: agricultura, 
+                sustentabilidade, e muito mais. </p>
+            <p class="card-abertura__texto">Venha descobir esse mundo cheio de caminhos a esplorar!</p>
+            <div class="posicao-imagem">
+                <img src="img/trator.svg" alt="Imagem de um trator para decoração" class="card-abertura__imagem">
+            </div>
+        </div>
+    </section>
+    <section id="historia-da-agricultura">
+        <h2 class="titulo-seçao">História da agricultura </h2>
+        <div class="container-carrossel">
+            <!-- Slider main container -->
+            <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/carrossel-card-1.svg" alt="Imagem explicação o que é a agricultura"></div>
+            <div class="swiper-slide"><img src="img/carrossel-card-2.svg" alt="Imagem inicio"></div>
+            <div class="swiper-slide"><img src="img/carrossel-card-3.svg" alt="Imagem sistemas agricolas"></div>
+            <div class="swiper-slide"><img src="img/carrossel-card-4.svg" alt="Imagem tipos de agricultura"></div>
+            <div class="swiper-slide"><img src="img/carrossel-card-5.svg" alt="Imagem importância da agricultura"></div>
+            <div class="swiper-slide"><img src="img/carrossel-card-6.svg" alt="Imagem agricultura no Brasil"></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="Agricultura-de-precisao">
+        <h2 class="titulo-seçao">Agricultura de precisão</h2>
+        <div class="cards">
+
+            <div class="card-conteudo card-azul">
+            <h3 class="titulo-card">O que é:</h3>
+            <p class="texto-card">Essa área trata de um tipo de gestão de informação sobre cultivos 
+                agrícolas, desde o plantio à colheita. A agricultura de precisão esta associada ao uso de 
+                aparelhos tecnológicos, buscando uma forma sustentável de continuar o plantio e atender a 
+                população.
+            </p>
+            </div>
+            
+            <div class="card-conteudo card-azul">
+            <h3 class="titulo-card">Surgimento</h3>
+            <p class="texto-card">O projeto de modernização da agricultura surgiu antes do período 
+                da Revolução Industrial, porém somente na década de 1980, na Europa e Estados Unidos a 
+                agricultura de precisão moderna pode se moldar como conhecemos.
+            </p>
+            </div>
+
+            <div class="card-conteudo card-azul">
+            <h3 class="titulo-card">Objetivo</h3>
+            <p class="texto-card">Essa área da agricultura tem por objetivo atuar nas mais diversas áreas 
+                do plantio e colheita. Aperfeiçoando o manejo de culturas, o uso de insumos, reduzindo o 
+                custo de produção e aumentando a produtividade, tudo para garantir um futuro sustentável
+                à produção agrícola. 
+            </p>
+            </div>
+
+            <div class="card-conteudo card-azul ">
+            <h3 class="titulo-card">Principais ferramentas</h3>
+            <p class="texto-card">As ferramentas representam um importante papel para a agricultura de 
+                precisão, utilizadas desde para evitar desperdícios até o uso de softwares para dados 
+                geográficos. Entre essas ferramentas temos: GPS, GIS, sensores de solo, sensores remotos, 
+                sistemas de mapeamento de colheita, drones, etc.
+            </p>
+            </div>
+        </div>
+    </section>
+    <section id="Agricultura-de-precisão-no-Paraná">
+        <h2 class="titulo-seçao">Agricultura de precisão no Paraná</h2>
+        <div class="carrossel">
+        <div class="carrossel__fundo">
+            <div class="carrossel__2-conteudo">
+                <div class="carrossel__slides">
+    
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">UEL integra pesquisa de agricultura de precisão para 
+                                    pequenos e grandes produtores
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://operobal.uel.br/proppg/2025/01/30/uel-integra-pesquisa-de-agricultura-de-precisao-para-pequenos-e-grandes-produtores/" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">Estado firma acordo com Ministério da Agricultura para 
+                                    impulsionar inovação no setor
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://www.aen.pr.gov.br/Noticia/Estado-firma-acordo-com-Ministerio-da-Agricultura-para-impulsionar-inovacao-no-setor" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">Parceria com a Agres viabiliza equipamentos nos cursos 
+                                    de Agricultura de Precisão
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://www.sistemafaep.org.br/parceria-com-a-agres-viabiliza-equipamentos-nos-cursos-de-agricultura-de-precisao/" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">Descubra quais são as ferramentas de gestão que todo 
+                                    produtor rural precisa conhecer
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://redeglobo.globo.com/rpc/move-parana/noticia/descubra-quais-sao-as-ferramentas-de-gestao-que-todo-produtor-rural-precisa-conhecer.ghtml" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">Evento em Curitiba mostra como Paraná é destaque no 
+                                    conceito de fazendas inteligentes
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://www.aen.pr.gov.br/Noticia/Evento-em-Curitiba-mostra-como-Parana-e-destaque-no-conceito-de-fazendas-inteligentes" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">Sistema FAEP promove transformação digital nos 
+                                    colégios agrícolas
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://www.sistemafaep.org.br/sistema-faep-promove-transformacao-digital-nos-colegios-agricolas/" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">Sistema FAEP lança cartilha com seus cursos de 
+                                    mecanização
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://www.cnabrasil.org.br/noticias/sistema-faep-lanca-cartilha-com-seus-cursos-de-mecanizacao" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__slide">
+                        <div class="slide__conteudo">
+                            <div class="titulo__artigo">
+                                <h3 class="titulo">SENAR-PR coloca colégios agrícolas na era digital
+                                </h3>
+                            </div>
+        
+                            <div class="botao__artigo">
+                                <button class="botao__carrossel"> 
+                                    <a href="https://www.sistemafaep.org.br/senar-pr-coloca-colegios-agricolas-na-era-digital/" 
+                                    class="botao-carrossel__link"> Saiba mais</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+    <section id="agricultura-familiar">
+        <h2 class="titulo-seçao">Agricultura Familiar</h2>
+        <div class="cards">
+
+            <div class="card-conteudo card-branco">
+            <h3 class="titulo-card">Do que se trata:</h3>
+            <p class="texto-card">A agricultura familiar é uma modalidade de produção da agricultura, 
+                nela a maior parte da mão de obra é exercida por unidades familiares, sendo desempenhada 
+                em pequenas propriedades. Apesar de utilizar somente 23% da área total dos estabelecimentos 
+                agrícolas, segundo o Censo Agropecuário de 2017, esse modo de produção é responsável pela 
+                alimentação brasileira.  
+            </p>
+            </div>
+
+            <div class="card-conteudo card-branco">
+            <h3 class="titulo-card">Importância</h3>
+            <p class="texto-card">Agricultura demonstra sua importância ao fato de fornecer alimentos à 
+                população brasileira combatendo a insegurança alimentar, além disso é expoente na 
+                movimentação da economia e compõem parte significativa da sustentabilidade do país.
+            </p>
+            </div>
+
+        </div>
+        <div class="card-sozinho">
+            <div class="card-conteudo card-branco card-solo">
+                <h3 class="titulo-card">Produções</h3>
+                <p class="texto-card">Esse setor agricola produz uma ampla variedade de alimentos, entre 
+                    eles: milho, mandioca, pecuária leiteira, ovinos, caprinos, olerícolas, feijão, cana, 
+                    arroz, suínos, aves, café, trigo, fruticulturas, hortaliças, entre outros. Dessa forma, 
+                    se torna relevante economicamente e socialmente.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="biotecnologia">
+        <h2 class="titulo-seçao">Biotecnologia</h2>
+        <div class="cards">
+            <div class="card-conteudo card-azul">
+            <h3 class="titulo-card">Melhoramento genético de plantas</h3>
+            <p class="texto-card">O melhoramento genético é obtido através de diversas abordagens entre 
+                elas: a genética a qual trata do estudo completo do genoma das plantas, controlando 
+                características importantes; os marcadores moleculares associados as sequencias de DNA 
+                favoráveis da planta; e a transgenia, que introduz genes estranhos no genoma da planta, 
+                dando-lhe novas características. São exemplos de plantas geneticamente modificadas o Milho
+                 Bt e o Algodão Bt.
+            </p>
+            </div>
+
+            <div class="card-conteudo card-azul ">
+            <h3 class="titulo-card">Biofertilizantes</h3>
+            <p class="texto-card">Os biofertilizantes, desenvolvidos para substituir o uso dos 
+                convencionais, utilizam-se de microrganismos para fixar o nitrogênio do ar no solo ou 
+                solubilizar nutrientes minerais, essenciais para o desenvolvimento da planta. Desse modo,
+                 esse mecanismo auxilia no aumento da produtividade, melhora a qualidade nutricional dos 
+                 alimentos e reduz a poluição causada pelos fertilizantes comuns.
+            </p>
+            </div>
+
+            <div class="card-conteudo card-azul">
+            <h3 class="titulo-card">Conservação e recuperação de solos</h3>
+            <p class="texto-card">O uso do solo e a garantia de sua qualidade são extremamente importantes 
+                para a agricultura, tendo em vista que, todo plantio depende deste. Assim, ao desenvolver 
+                bioindicadores, trabalhar na biorremediação e utilizar outras tecnologias, a biotecnologia se 
+                torna essencial para manter um uso saudável da terra, identificando problemas, contaminações e 
+                riscos de uso.
+            </p>
+            </div>
+
+            <div class="card-conteudo card-azul ">
+            <h3 class="titulo-card">Saúde animal</h3>
+            <p class="texto-card">Além da área de plantio, a pecuária também é indispensável para a vida 
+                humana, assim a biotecnologia desenvolve uma série de tecnologias para a vida animal como 
+                a seleção assistida, a clonagem, as vacinas, tratamentos e suplementos. Todas voltadas 
+                para a produção animal, aumentando seu número e qualidade.
+            </p>
+            </div>
+        </div>
+    </section>
+    <section id="sustentabilidade-na-agricultura">
+        <h2 class="titulo-seçao">Sustentabilidade na agricultura</h2>
+
+        <div class="cards">
+            <div class="card-conteudo card-branco">
+            <h3 class="titulo-card">Conheça a sustentabilidade</h3>
+            <p class="texto-card">A sustentabilidade diz respeito a práticas que visam a preservação do 
+                meio ambiente, o qual vem, a muitos anos, sendo desgastado, implicando uma série de 
+                respostas negativas, como por exemplo o aquecimento global. Logo, a sustentabilidade 
+                afeta profundamente nas relações sociais, de governança e se mostra uma responsabilidade 
+                de todos, já que preservar significa deixar um legado e marca para as próximas gerações.
+            </p>
+            </div>
+
+            <div class="card-conteudo card-branco">
+            <h3 class="titulo-card">Agricultura e sustentabilidade são opostos?</h3>
+            <p class="texto-card">Certamente essas duas áreas vem crescendo exponencialmente ao longo dos 
+                anos, mas de forma alguma são opostas, a sustentabilidade está profundamente ligada à 
+                agricultura e é importante para seu desenvolvimento de forma que respeite as necessidades 
+                do meio ambiente. Assim, diversas práticas agrícolas se juntam a ações sustentáveis, em 
+                exemplo a rotação de culturas e a agricultura de precisão.
+            </p>
+            </div>
+        </div>
+        <div class="card-sozinho">
+            <div class="card-conteudo card-branco card-solo">
+                <h3 class="titulo-card">Papel da agricultura de precisão</h3>
+                <p class="texto-card">Ao utilizar-se de tecnologias como os drones, sensores e irrigadores 
+                programáveis, a agricultura de precisão é fundamental para manter um plantio colaborativo 
+                ao meio ambiente por reduzir desperdícios de água e garantir o uso correto do solo usado 
+                no plantio.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="conexao-campo-e-cidade">
+        <h2 class="titulo-seçao">Conexão campo e cidade</h2> 
+
+        <div class="card-conexao-container">
+            <!--Abaixo de 1024-->
+            <div class="card-conexao-corpo-mobile">
+                    <div class="card-conexao">
+                        <h3 class="card-conexao__titulo">Importância desta conexão</h3>
+                        <div class="card__conexao-texto-imagem"> 
+                            <div class="card__descrição">
+                                <p class="card-paragrafo">   O campo é responsável por alimentar todos do meio urbano, 
+                                    bem como fornecer matéria-prima para todas as indústrias. Por outro lado, a 
+                                    cidade fornece tecnologias para o desenvolvimento da agricultura e pecuária, 
+                                    dispõe de serviços básicos e garante que o meio rural movimente-se economicamente. 
+                                    Dessa maneira, pode-se notar que a conexão entre estes dois grandes meios é essencial 
+                                    para seus desenvolvimentos e crescimentos, que se tornam cada vez mais próximos e 
+                                    interdependentes por comporem um grande sistema. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="card-conexao-corpo-mobile-imagem">
+                <div class="card-imagem-conexao">
+                    <div class="card__conexao-imagem"> 
+                        <img src="img/conexão.png" alt="campo de trigo ao lado da cidade" class="imagem-conexao-mobile">    
+                    </div>
+                </div>
+            </div>
+
+            <!--Acima de 1024-->
+            <div class="card-conexao-corpo">
+                <div class="card-conexao">
+                    <h3 class="card-conexao__titulo">Importância desta conexão</h3>
+                        <div class="card__conexao-texto-imagem"> 
+                             <!--coluna 1-->
+                            <div class="card__descrição">
+                                <p class="card-paragrafo">   O campo é responsável por alimentar todos do meio urbano, 
+                                    bem como fornecer matéria-prima para todas as indústrias. Por outro lado, a 
+                                    cidade fornece tecnologias para o desenvolvimento da agricultura e pecuária, 
+                                    dispõe de serviços básicos e garante que o meio rural movimente-se economicamente. 
+                                    Dessa maneira, pode-se notar que a conexão entre estes dois grandes meios é essencial 
+                                    para seus desenvolvimentos e crescimentos, que se tornam cada vez mais próximos e 
+                                    interdependentes por comporem um grande sistema. 
+                                 </p>
+                            </div>
+                         
+                            <!--coluna 2 -->
+                            <img src="img/conexão.png" alt="campo de trigo ao lado da cidade" class="imagem-conexao">    
+                        </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section id="jogo">
+        <h2 class="titulo-seçao">Vamos nos divertir?</h2>
+        <div class="conteudo-jogo">
+            <div class="card-jogo">
+                <div class="card-jogo-conteudo">
+                    <h3 class="titulo-card-jogo">Você consegue superar esse desafio?</h3>
+                    <h4 class="subtitulo-card-jogo">Como vai funcionar:</h4>
+                    <p class="texto-card-jogo">Você precisa ajudar a laranjinha, residente do campo, a achar 
+                        seu caminho até a vendinha de suco de laranja, na cidade. Tendo cuidado em não 
+                        esbarrar nos obstáculos cinzas, mova o mouse sobre os ladrilhos do labirinto para a 
+                        laranjinha chegar à seu destino!
+                    </p>
+                    <p class="texto-card-jogo">Pronto! Agora é só por a mão na massa e se divertir.</p>
+               </div>
+            </div>
+            <div class="jogo">
+                <div class="labirinto-completo">
+                    <div class="labirinto-completo-container">
+                        <div class="estilo-ladrilho começo"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho parede"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho ladrilho"></div>
+                        <div class="estilo-ladrilho fim"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="rodapé">
+        <img src="img/rodapé.svg" alt="imagem campode de um lado e cidade do outro" class="imagem-rodapé">
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Fonte código "container-carrossel": https://swiperjs.com/-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+           spaceBetween: 10 ,
+           slidesPerView: 3,
+           pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+           },
+           navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+           },    
+        })
+    </script>  
+</body>
+</html>

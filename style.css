@@ -1,0 +1,58 @@
+@import url(Styles/header.css);
+@import url(Styles/seção-abertura.css);
+@import url(Styles/historia-da-agricultura.css);
+@import url(Styles/cards-brancos-e-azuis.css);
+@import url(Styles/agricultura-de-precisão-no-Paraná.css);
+@import url(Styles/conexao-campo-e-cidade.css);
+@import url(Styles/jogo.css);
+@import url(Styles/rodapé.css);
+
+:root{
+    --cor-de-fundo: #CAFFCA;
+    --branco: #FFFFFF;
+    --cor-titulos: #072A00;
+    --cor-texto: #140200;
+    --cor-texto-abertura: #310700;
+    --cor-card-azul: #ACFFFF;   
+    --cor-botão: #9E351B;
+    --cor-botão-ativo: #FFFF4D;
+    --cor-ladrilho: #3a0c00;
+    --cor-ladrilho-ativo: #123d01;
+    --cor-ladrilho-parede: #777575;
+    --cor-labirinto: #2fc950;
+    --fonte-padrao: "Fira Sans";
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+html, body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.titulo-seçao{
+    background-color: var(--branco);
+    color: var(--cor-titulos);
+    font-family: var(--fonte-padrao);
+    font-size: 18px ;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.1rem
+}
+
+@media screen and (min-width:1024px){
+    .titulo-seçao{
+        font-size: 26px;
+        padding: 1.5rem
+    }
+}
+
+@media screen and (min-width:1728px){
+    .titulo-seçao{
+       font-size: 32px ;
+       padding: 2rem
+    }
+}
