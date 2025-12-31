@@ -1,0 +1,187 @@
+.conteudo-jogo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.card-jogo{
+    background-color: var(--branco);
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 60%;
+    border-radius: 30px;
+    box-shadow: 0 10px 5px rgba(7, 161, 77, 0.329);
+    min-height: 100px;
+    min-width: 80px;
+}
+
+.card-jogo:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(2, 104, 48, 0.507);
+}
+
+.titulo-card-jogo, .subtitulo-card-jogo, .texto-card-jogo{
+    font-family: var(--fonte-padrao);
+}
+
+.titulo-card-jogo{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-titulos);
+    padding: 1rem;
+}
+
+.subtitulo-card-jogo{
+    color: var(--cor-texto);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.texto-card-jogo{
+    color: var(--cor-texto);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+}
+
+.labirinto-completo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 1rem; 
+    background-color: #00581d; 
+    border-radius: 0.5rem; 
+    box-shadow: 2px 4px 6px rgba(7, 161, 77, 0.329); 
+    margin: 2rem auto;
+    width: 95%;
+    max-width: 400px;
+    min-width: 250px;
+    aspect-ratio: 1 / 1; 
+}
+
+.labirinto-completo-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(7, 1fr);
+    gap: 2px;
+    border: 4px solid #05ac50; 
+    border-radius: 8px; 
+    padding: 4px;
+    background-color: var(--cor-labirinto);
+    width: 100%; 
+    height: 100%; 
+}
+
+.estilo-ladrilho {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    border-radius: 4px; 
+    transition: background-color 0.2s ease-in-out; 
+}
+
+/* Estilo para o ladrilho de início do labirinto */
+.começo{
+    background-color: var(--cor-ladrilho); 
+    background-image: url('/img/laranja.png'); 
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+} 
+
+/* Efeito ao passar o mouse sobre o ladrilho de inicio */
+.começo:hover{
+    transform: scale(1.5);
+}
+
+/* Estilo para o ladrilho de fim do labirinto */
+.fim {
+    background-color: var(--cor-ladrilho); 
+    background-image: url('/img/suco-de-laranja.png'); 
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+/* Efeito ao passar o mouse sobre o ladrilho de fim */
+.fim:hover{
+    transform: scale(1.5);
+}
+
+/* Estilo para os ladrilhos de caminho (percorríveis) */
+.ladrilho{ 
+    background-color: var(--cor-ladrilho); 
+    cursor: pointer; 
+}
+
+/* Efeito ao passar o mouse sobre os ladrilhos de caminho */
+.ladrilho:hover { 
+    background-color: var(--cor-ladrilho-ativo); 
+}
+
+ /* Estilo para os ladrilhos de parede (não percorríveis) */
+.parede { 
+    background-color: var(--cor-ladrilho-parede); 
+    cursor: not-allowed; 
+} 
+
+@media screen and (min-width:1024px){
+
+    .conteudo-jogo{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .card-jogo{
+        margin: 2rem;
+        margin-left: 5rem;
+        padding: 1.5rem;
+        height: 350px;
+        width: 70%;
+    }
+
+    .titulo-card-jogo{
+        font-size: 18px;
+        padding: 1.5rem;
+    }
+
+    .subtitulo-card-jogo, .texto-card-jogo{
+        font-size: 16px;
+    }
+
+    .texto-card-jogo{
+        padding: 1rem 2.5rem;
+    }
+
+    .labirinto-completo {
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (min-width:1728px){
+    .card-jogo{
+        padding: 2rem;
+        min-height: 350px;
+    }
+
+    .titulo-card-jogo{
+        font-size: 20px;
+        padding: 2rem;
+    }
+
+    .subtitulo-card-jogo, .texto-card-jogo{
+        font-size: 18px;
+    }
+
+    .texto-card-jogo{
+        padding: 1rem 5rem;
+    }
+
+    .labirinto-completo {
+        max-width: 800px;
+    }
+
+}

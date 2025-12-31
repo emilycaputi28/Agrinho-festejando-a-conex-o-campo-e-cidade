@@ -1,0 +1,130 @@
+.card-conexao-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.card-conexao-corpo-mobile, .card-conexao-corpo-mobile-imagem, .card-conexao-corpo{
+    display: flex;
+    background-color: var(--branco);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 5px rgba(7, 161, 77, 0.329);
+    width: 60%;
+    margin: 1rem;
+}
+
+.card-conexao-corpo:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(2, 104, 48, 0.507);
+}
+
+.card-conexao__titulo, .card-paragrafo{
+    font-family: var(--fonte-padrao);
+}
+
+.card-conexao__titulo{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor-titulos);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.card__conexao-texto-imagem{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.card-paragrafo{
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-texto);
+    padding: 0.5rem;
+}
+
+.card-conexao-corpo-mobile-imagem{
+    width: 30%;
+}
+
+.card-imagem-conexao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-conexao-mobile{
+    width: 80%;
+    border-radius: 30px;
+}
+
+.card-conexao-corpo{
+    display: none;
+}
+
+@media screen and (min-width:1024px){
+
+    .card-conexao-corpo-mobile, .card-conexao-corpo-mobile-imagem{
+        display: none;
+    }
+
+    .card-conexao-corpo{
+        display: block; 
+    }
+
+    .card-conexao-container{
+        margin: 2.5rem auto;
+    }
+
+    .card-conexao-corpo{
+        padding: 2rem;
+        width: 60%;
+    }
+
+    .card-conexao__titulo{
+        font-size: 22px;
+    }
+
+    .card__conexao-texto-imagem{
+        padding: 1rem 1.5rem;
+    }
+
+    .card-paragrafo{
+        font-size: 18px;
+        padding: 0 5rem 0 0;
+    }
+
+    .imagem-conexao{
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width:1728px){
+    
+    .card-conexao-container{
+        margin: 5rem auto;
+    }
+
+    .card-conexao-corpo{
+        padding: 3rem;
+    }
+
+    .card-conexao__titulo{
+        font-size: 26px;
+        padding: 2rem 0;
+    }
+
+    .card__conexao-texto-imagem{
+        padding: 2rem 5rem;
+    }
+
+}

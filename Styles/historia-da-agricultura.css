@@ -1,0 +1,43 @@
+.container-carrossel{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.swiper{
+    width: 90%;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width:1024px){
+
+    .container-carrossel{
+        margin: 3rem 0;
+        padding: 2rem;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:1728px){
+
+    .container-carrossel{
+        padding: 3rem;
+    }
+
+    .swiper{
+        width: 70%;
+    }
+
+}
